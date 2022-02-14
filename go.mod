@@ -1,4 +1,4 @@
-module github.com/miquella/vaulted
+module github.com/NoF0rte/vaulted/v3
 
 require (
 	github.com/aws/aws-sdk-go v1.29.2

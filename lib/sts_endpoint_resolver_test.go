@@ -7,7 +7,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 
-	"github.com/miquella/vaulted/lib"
+	vaulted "github.com/NoF0rte/vaulted/v3/lib"
 )
 
 var DefaultEndpoint = endpoints.ResolvedEndpoint{

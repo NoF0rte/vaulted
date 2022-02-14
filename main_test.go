@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/miquella/vaulted/lib"
-	"github.com/miquella/vaulted/lib/legacy"
+	vaulted "github.com/NoF0rte/vaulted/v3/lib"
+	"github.com/NoF0rte/vaulted/v3/lib/legacy"
 )
 
 func CaptureStdout(f func()) []byte {

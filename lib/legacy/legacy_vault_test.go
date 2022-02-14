@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/miquella/vaulted/lib/legacy"
+	"github.com/NoF0rte/vaulted/v3/lib/legacy"
 )
 
 const (

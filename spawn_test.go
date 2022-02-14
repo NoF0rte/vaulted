@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/miquella/vaulted/lib"
+	vaulted "github.com/NoF0rte/vaulted/v3/lib"
 )
 
 func TestSpawn(t *testing.T) {

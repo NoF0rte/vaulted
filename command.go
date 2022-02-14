@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/miquella/vaulted/edit"
-	"github.com/miquella/vaulted/lib"
+	"github.com/NoF0rte/vaulted/v3/edit"
+	vaulted "github.com/NoF0rte/vaulted/v3/lib"
 )
 
 var (
