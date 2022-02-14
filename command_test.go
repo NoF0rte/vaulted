@@ -26,7 +26,7 @@ var (
 				SessionOptions: SessionOptions{
 					VaultName: "one",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -36,7 +36,7 @@ var (
 				SessionOptions: SessionOptions{
 					VaultName: "one",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -46,7 +46,7 @@ var (
 				SessionOptions: SessionOptions{
 					VaultName: "one",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -56,7 +56,7 @@ var (
 				SessionOptions: SessionOptions{
 					VaultName: "one",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -539,7 +539,7 @@ var (
 				SessionOptions: SessionOptions{
 					VaultName: "one",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -549,7 +549,7 @@ var (
 				SessionOptions: SessionOptions{
 					Role: "arn:something:or:other",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -560,7 +560,7 @@ var (
 					VaultName: "one",
 					Role:      "arn:something:or:other",
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},
@@ -571,7 +571,7 @@ var (
 					VaultName: "foo",
 					NoSession: true,
 				},
-				Command:       []string{"/bin/fish", "--login"},
+				Command:       []string{"/bin/fish"},
 				DisplayStatus: true,
 			},
 		},

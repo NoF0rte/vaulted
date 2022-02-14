@@ -560,7 +560,7 @@ func interactiveShellCommand() []string {
 		shell = "/bin/sh"
 	}
 
-	return []string{shell, "--login"}
+	return []string{shell}
 }
 
 func detectShell() (string, error) {
