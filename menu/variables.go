@@ -20,7 +20,7 @@ func (m *VariableMenu) Handler() error {
 		if m.Vault.Vars == nil {
 			input, varErr = interaction.ReadMenu("Edit environment variables: [a,b]: ")
 		} else {
-			input, varErr = interaction.ReadMenu("Edit environment variables: [a,S,D,b]: ")
+			input, varErr = interaction.ReadMenu("Edit environment variables: [a,e,S,D,b]: ")
 		}
 		if varErr != nil {
 			return varErr
@@ -48,6 +48,20 @@ func (m *VariableMenu) Handler() error {
 				}
 			}
 			m.Vault.Vars[variableKey] = variableValue
+		case "e", "edit":
+			variable, valErr := interaction.ReadValue("Variable name: ")
+			if valErr != nil {
+				return valErr
+			}
+			if _, exists := m.Vault.Vars[variable]; exists {
+				variableValue, valErr := interaction.ReadValue("Value: ")
+				if valErr != nil {
+					return valErr
+				}
+				m.Vault.Vars[variable] = variableValue
+			} else {
+				color.Red("Variable '%s' not found", variable)
+			}
 		case "S", "show", "hide":
 			m.toggleHidden()
 		case "D", "delete", "remove":
@@ -84,6 +98,7 @@ func (m *VariableMenu) Help() {
 	defer color.Unset()
 	fmt.Println("")
 	fmt.Println("a,add    - Add")
+	fmt.Println("e,edit   - Edit")
 	fmt.Println("S,show   - Show/Hide Secrets")
 	fmt.Println("D,delete - Delete")
 	fmt.Println("?,help   - Help")
